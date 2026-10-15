@@ -1,0 +1,340 @@
+{
+  "dataset_metadata": {
+    "file_path": "C:\\college\\sem 5\\ML\\MINI_PROJECT\\data\\train.tsv",
+    "initial_rows": 156060,
+    "valid_rows": 156059,
+    "dropped_rows": 1,
+    "num_classes": 5,
+    "classes": [
+      "Very Negative",
+      "Negative",
+      "Neutral",
+      "Positive",
+      "Very Positive"
+    ],
+    "class_distribution": {
+      "Very Negative": 7072,
+      "Negative": 27272,
+      "Neutral": 79582,
+      "Positive": 32927,
+      "Very Positive": 9206
+    }
+  },
+  "labels": {
+    "1": "Negative",
+    "2": "Neutral",
+    "3": "Positive",
+    "4": "Very Positive",
+    "0": "Very Negative"
+  },
+  "best_model": "Linear SVM",
+  "models": {
+    "Multinomial Naive Bayes": {
+      "model_name": "Multinomial Naive Bayes",
+      "cv_accuracy_mean": 0.5971229189232693,
+      "cv_accuracy_std": 0.004035035633986457,
+      "cv_scores": [
+        0.6000400480576692,
+        0.5891469763716459,
+        0.5995033841964036,
+        0.5983419440105731,
+        0.5985822419800553
+      ],
+      "test_accuracy": 0.6006023324362425,
+      "macro_precision": 0.5926385198475201,
+      "macro_recall": 0.34435239952541585,
+      "macro_f1": 0.36491579055874035,
+      "weighted_f1": 0.5482694090515703,
+      "train_duration_sec": 0.06564211845397949,
+      "latency_per_sample_ms": 0.0002245467304648703,
+      "confusion_matrix": [
+        [
+          86,
+          598,
+          694,
+          33,
+          3
+        ],
+        [
+          47,
+          1412,
+          3865,
+          126,
+          4
+        ],
+        [
+          12,
+          644,
+          14462,
+          793,
+          6
+        ],
+        [
+          1,
+          85,
+          3824,
+          2606,
+          70
+        ],
+        [
+          0,
+          13,
+          537,
+          1111,
+          180
+        ]
+      ],
+      "classification_report": {
+        "Very Negative": {
+          "precision": 0.589041095890411,
+          "recall": 0.06082036775106082,
+          "f1-score": 0.11025641025641025,
+          "support": 1414.0
+        },
+        "Negative": {
+          "precision": 0.5130813953488372,
+          "recall": 0.2588925559222589,
+          "f1-score": 0.3441384352912503,
+          "support": 5454.0
+        },
+        "Neutral": {
+          "precision": 0.6185099649302882,
+          "recall": 0.9085883018156687,
+          "f1-score": 0.7359983714598336,
+          "support": 15917.0
+        },
+        "Positive": {
+          "precision": 0.5581494966802313,
+          "recall": 0.3956878226541148,
+          "f1-score": 0.4630830741892492,
+          "support": 6586.0
+        },
+        "Very Positive": {
+          "precision": 0.6844106463878327,
+          "recall": 0.0977729494839761,
+          "f1-score": 0.17110266159695817,
+          "support": 1841.0
+        },
+        "accuracy": 0.6006023324362425,
+        "macro avg": {
+          "precision": 0.5926385198475201,
+          "recall": 0.34435239952541585,
+          "f1-score": 0.36491579055874035,
+          "support": 31212.0
+        },
+        "weighted avg": {
+          "precision": 0.5899027853630975,
+          "recall": 0.6006023324362425,
+          "f1-score": 0.5482694090515703,
+          "support": 31212.0
+        }
+      },
+      "artifact_path": "C:\\college\\sem 5\\ML\\MINI_PROJECT\\artifacts\\models\\multinomial_naive_bayes.joblib"
+    },
+    "Logistic Regression": {
+      "model_name": "Logistic Regression",
+      "cv_accuracy_mean": 0.6354978669344942,
+      "cv_accuracy_std": 0.0027508965261923124,
+      "cv_scores": [
+        0.6381257509010813,
+        0.6306768121746096,
+        0.6343465897713164,
+        0.6365493211582363,
+        0.6377908606672273
+      ],
+      "test_accuracy": 0.6396257849545047,
+      "macro_precision": 0.6013354550779442,
+      "macro_recall": 0.44201851493073574,
+      "macro_f1": 0.4824470445295489,
+      "weighted_f1": 0.6142330701632288,
+      "train_duration_sec": 18.420376539230347,
+      "latency_per_sample_ms": 0.000231673621862466,
+      "confusion_matrix": [
+        [
+          284,
+          720,
+          374,
+          29,
+          7
+        ],
+        [
+          174,
+          2079,
+          3017,
+          175,
+          9
+        ],
+        [
+          23,
+          959,
+          13910,
+          996,
+          29
+        ],
+        [
+          3,
+          148,
+          2994,
+          3196,
+          245
+        ],
+        [
+          0,
+          23,
+          233,
+          1090,
+          495
+        ]
+      ],
+      "classification_report": {
+        "Very Negative": {
+          "precision": 0.5867768595041323,
+          "recall": 0.20084865629420084,
+          "f1-score": 0.2992623814541623,
+          "support": 1414.0
+        },
+        "Negative": {
+          "precision": 0.5291422753881395,
+          "recall": 0.3811881188118812,
+          "f1-score": 0.44314185228604924,
+          "support": 5454.0
+        },
+        "Neutral": {
+          "precision": 0.6776110678098207,
+          "recall": 0.8739083998240874,
+          "f1-score": 0.7633420222252709,
+          "support": 15917.0
+        },
+        "Positive": {
+          "precision": 0.5825738242799854,
+          "recall": 0.48527178864257514,
+          "f1-score": 0.5294897282968853,
+          "support": 6586.0
+        },
+        "Very Positive": {
+          "precision": 0.6305732484076433,
+          "recall": 0.2688756110809343,
+          "f1-score": 0.376999238385377,
+          "support": 1841.0
+        },
+        "accuracy": 0.6396257849545047,
+        "macro avg": {
+          "precision": 0.6013354550779442,
+          "recall": 0.44201851493073574,
+          "f1-score": 0.4824470445295489,
+          "support": 31212.0
+        },
+        "weighted avg": {
+          "precision": 0.6247243487332157,
+          "recall": 0.6396257849545047,
+          "f1-score": 0.6142330701632288,
+          "support": 31212.0
+        }
+      },
+      "artifact_path": "C:\\college\\sem 5\\ML\\MINI_PROJECT\\artifacts\\models\\logistic_regression.joblib"
+    },
+    "Linear SVM": {
+      "model_name": "Linear SVM",
+      "cv_accuracy_mean": 0.6309402834524823,
+      "cv_accuracy_std": 0.0021168777740838258,
+      "cv_scores": [
+        0.6328394072887465,
+        0.6274729675610733,
+        0.6301814249669591,
+        0.6334254475549682,
+        0.6307821698906644
+      ],
+      "test_accuracy": 0.6384723824170191,
+      "macro_precision": 0.594939064784602,
+      "macro_recall": 0.46145301094357344,
+      "macro_f1": 0.5026716456820077,
+      "weighted_f1": 0.6141605845225561,
+      "train_duration_sec": 42.56728911399841,
+      "latency_per_sample_ms": 0.008127062378457674,
+      "confusion_matrix": [
+        [
+          402,
+          616,
+          368,
+          24,
+          4
+        ],
+        [
+          253,
+          1978,
+          3060,
+          158,
+          5
+        ],
+        [
+          49,
+          908,
+          13963,
+          959,
+          38
+        ],
+        [
+          4,
+          114,
+          3143,
+          2975,
+          350
+        ],
+        [
+          1,
+          12,
+          247,
+          971,
+          610
+        ]
+      ],
+      "classification_report": {
+        "Very Negative": {
+          "precision": 0.5669957686882934,
+          "recall": 0.2842998585572843,
+          "f1-score": 0.37870937352802636,
+          "support": 1414.0
+        },
+        "Negative": {
+          "precision": 0.5452039691289967,
+          "recall": 0.36266960029336265,
+          "f1-score": 0.4355868751376349,
+          "support": 5454.0
+        },
+        "Neutral": {
+          "precision": 0.6719118425484818,
+          "recall": 0.8772381730225545,
+          "f1-score": 0.7609679001580467,
+          "support": 15917.0
+        },
+        "Positive": {
+          "precision": 0.5848240613328092,
+          "recall": 0.45171576070452474,
+          "f1-score": 0.5097232930694766,
+          "support": 6586.0
+        },
+        "Very Positive": {
+          "precision": 0.605759682224429,
+          "recall": 0.3313416621401412,
+          "f1-score": 0.42837078651685395,
+          "support": 1841.0
+        },
+        "accuracy": 0.6384723824170191,
+        "macro avg": {
+          "precision": 0.594939064784602,
+          "recall": 0.46145301094357344,
+          "f1-score": 0.5026716456820077,
+          "support": 31212.0
+        },
+        "weighted avg": {
+          "precision": 0.62273965479021,
+          "recall": 0.6384723824170191,
+          "f1-score": 0.6141605845225561,
+          "support": 31212.0
+        }
+      },
+      "artifact_path": "C:\\college\\sem 5\\ML\\MINI_PROJECT\\artifacts\\models\\linear_svm.joblib"
+    }
+  },
+  "timestamp": "2026-10-12 23:56:43"
+}
